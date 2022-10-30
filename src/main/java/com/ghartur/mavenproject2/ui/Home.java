@@ -52,7 +52,7 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setMaximumSize(new java.awt.Dimension(700, 400));
         jPanel1.setMinimumSize(new java.awt.Dimension(700, 400));
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Cadastros");
         jButton1.setAlignmentY(0.0F);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
