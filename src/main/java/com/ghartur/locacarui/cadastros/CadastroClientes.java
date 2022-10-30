@@ -8,16 +8,14 @@ package com.ghartur.locacarui.cadastros;
  *
  * @author artur
  */
-public class CadastroCarros extends javax.swing.JPanel {
+public class CadastroClientes extends javax.swing.JPanel {
 
     /**
      * Creates new form NewJPanel
      */
-    public CadastroCarros() {
+    public CadastroClientes() {
         initComponents();
     }
-    
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,12 +33,8 @@ public class CadastroCarros extends javax.swing.JPanel {
         carDescription = new javax.swing.JTextField();
         carDailyPrice = new javax.swing.JTextField();
         carPlate = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        brandList = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
-        categoryList = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
-        colorList = new javax.swing.JComboBox<>();
+        carPlate1 = new javax.swing.JTextField();
+        carPlate2 = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(102, 102, 102));
 
@@ -66,7 +60,6 @@ public class CadastroCarros extends javax.swing.JPanel {
         });
 
         carName.setText("Nome");
-        carName.setToolTipText("Nome");
         carName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 carNameActionPerformed(evt);
@@ -80,34 +73,26 @@ public class CadastroCarros extends javax.swing.JPanel {
             }
         });
 
-        carDailyPrice.setText("Diária");
-
-        carPlate.setText("Placa");
-
-        jLabel1.setText("Marca");
-
-        brandList.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        brandList.addActionListener(new java.awt.event.ActionListener() {
+        carDailyPrice.setText("Email");
+        carDailyPrice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                brandListActionPerformed(evt);
+                carDailyPriceActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Categoria");
+        carPlate.setText("Carteira de Motorista");
 
-        categoryList.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        categoryList.addActionListener(new java.awt.event.ActionListener() {
+        carPlate1.setText("Endereço");
+        carPlate1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                categoryListActionPerformed(evt);
+                carPlate1ActionPerformed(evt);
             }
         });
 
-        jLabel4.setText("Cor");
-
-        colorList.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        colorList.addActionListener(new java.awt.event.ActionListener() {
+        carPlate2.setText("Contato");
+        carPlate2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                colorListActionPerformed(evt);
+                carPlate2ActionPerformed(evt);
             }
         });
 
@@ -125,28 +110,14 @@ public class CadastroCarros extends javax.swing.JPanel {
                 .addGap(150, 150, 150))
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(brandList, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(carName, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(carDailyPrice, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(carDescription, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(carPlate, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(categoryList, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(colorList, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(50, 50, 50))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel4))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(carName, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(carDailyPrice, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(carDescription, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(carPlate, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(carPlate1, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(carPlate2, javax.swing.GroupLayout.Alignment.LEADING))
+                .addGap(50, 50, 50))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -159,18 +130,10 @@ public class CadastroCarros extends javax.swing.JPanel {
                 .addComponent(carDailyPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(carPlate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
-                .addGap(2, 2, 2)
-                .addComponent(brandList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
-                .addGap(2, 2, 2)
-                .addComponent(categoryList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel4)
-                .addGap(3, 3, 3)
-                .addComponent(colorList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(carPlate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(carPlate2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Cadastrar)
@@ -181,8 +144,7 @@ public class CadastroCarros extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void CadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CadastrarActionPerformed
-        String name = carName.getText();
-        
+        // TODO add your handling code here:
     }//GEN-LAST:event_CadastrarActionPerformed
 
     private void LimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparActionPerformed
@@ -201,34 +163,28 @@ public class CadastroCarros extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_carNameActionPerformed
 
-    private void brandListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brandListActionPerformed
+    private void carDailyPriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carDailyPriceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_brandListActionPerformed
+    }//GEN-LAST:event_carDailyPriceActionPerformed
 
-    private void categoryListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryListActionPerformed
+    private void carPlate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carPlate1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_categoryListActionPerformed
+    }//GEN-LAST:event_carPlate1ActionPerformed
 
-    private void colorListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorListActionPerformed
+    private void carPlate2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_carPlate2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_colorListActionPerformed
-    
-    public static void main(String args[]){
-    }
+    }//GEN-LAST:event_carPlate2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Cadastrar;
     private javax.swing.JButton Cancelar;
     private javax.swing.JButton Limpar;
-    private javax.swing.JComboBox<String> brandList;
     private javax.swing.JTextField carDailyPrice;
     private javax.swing.JTextField carDescription;
     private javax.swing.JTextField carName;
     private javax.swing.JTextField carPlate;
-    private javax.swing.JComboBox<String> categoryList;
-    private javax.swing.JComboBox<String> colorList;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField carPlate1;
+    private javax.swing.JTextField carPlate2;
     // End of variables declaration//GEN-END:variables
 }
