@@ -182,6 +182,8 @@ public class CadastroCarros extends javax.swing.JPanel {
 
     private void CadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CadastrarActionPerformed
         String name = carName.getText();
+        String description = carDescription.getText();
+        
         
     }//GEN-LAST:event_CadastrarActionPerformed
 
@@ -213,8 +215,6 @@ public class CadastroCarros extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_colorListActionPerformed
     
-    public static void main(String args[]){
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Cadastrar;

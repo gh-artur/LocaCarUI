@@ -5,6 +5,7 @@
 package com.ghartur.locacarui.telas;
 
 import com.formdev.flatlaf.FlatDarkLaf;
+import com.ghartur.locacarui.aluguel.Aluguel;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.logging.Level;
@@ -124,7 +125,8 @@ public class Home extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         TelaCadastro cadastros = new TelaCadastro();
-        cadastros.setVisible(true);        // TODO add your handling code here:
+        cadastros.setVisible(true);
+        cadastros.setLocationRelativeTo(null);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -132,7 +134,9 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        Aluguel aluguel = new Aluguel();
+        aluguel.setVisible(true);
+        aluguel.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

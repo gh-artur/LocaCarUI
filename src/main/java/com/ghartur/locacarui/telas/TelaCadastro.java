@@ -30,23 +30,22 @@ public class TelaCadastro extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTabbedPane6 = new javax.swing.JTabbedPane();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
         cadastroCarros1 = new com.ghartur.locacarui.cadastros.CadastroCarros();
         cadastroCategorias1 = new com.ghartur.locacarui.cadastros.CadastroCategorias();
+        cadastroClientes1 = new com.ghartur.locacarui.cadastros.CadastroClientes();
         cadastroEspecificações1 = new com.ghartur.locacarui.cadastros.CadastroEspecificações();
         cadastroMarcas1 = new com.ghartur.locacarui.cadastros.CadastroMarcas();
-        cadastroClientes1 = new com.ghartur.locacarui.cadastros.CadastroClientes();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        jTabbedPane6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jTabbedPane6.addTab("Carros", cadastroCarros1);
-        jTabbedPane6.addTab("Categorias", cadastroCategorias1);
-        jTabbedPane6.addTab("Especificações", cadastroEspecificações1);
-        jTabbedPane6.addTab("Marcas", cadastroMarcas1);
-        jTabbedPane6.addTab("Clientes", cadastroClientes1);
+        jTabbedPane2.addTab("CARROS", cadastroCarros1);
+        jTabbedPane2.addTab("CATEGORIAS", cadastroCategorias1);
+        jTabbedPane2.addTab("CLIENTES", cadastroClientes1);
+        jTabbedPane2.addTab("ESPECIFICAÇÕES", cadastroEspecificações1);
+        jTabbedPane2.addTab("MARCAS", cadastroMarcas1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -54,14 +53,14 @@ public class TelaCadastro extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 667, Short.MAX_VALUE)
+                .addComponent(jTabbedPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 667, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 539, Short.MAX_VALUE)
+                .addComponent(jTabbedPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 539, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -122,6 +121,8 @@ public class TelaCadastro extends javax.swing.JFrame {
                 telaCadastro.setVisible(true);
                 telaCadastro.setLocationRelativeTo(null);
                 telaCadastro.setSize(width/2,height/2);
+                telaCadastro.setResizable(false);
+                
             }
         });
     }
@@ -133,6 +134,6 @@ public class TelaCadastro extends javax.swing.JFrame {
     private com.ghartur.locacarui.cadastros.CadastroEspecificações cadastroEspecificações1;
     private com.ghartur.locacarui.cadastros.CadastroMarcas cadastroMarcas1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTabbedPane jTabbedPane6;
+    private javax.swing.JTabbedPane jTabbedPane2;
     // End of variables declaration//GEN-END:variables
 }

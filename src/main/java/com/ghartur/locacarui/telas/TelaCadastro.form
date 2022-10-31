@@ -51,7 +51,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTabbedPane6" pref="667" max="32767" attributes="0"/>
+                  <Component id="jTabbedPane2" pref="667" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -60,27 +60,22 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTabbedPane6" pref="539" max="32767" attributes="0"/>
+                  <Component id="jTabbedPane2" pref="539" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JTabbedPane" name="jTabbedPane6">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="0"/>
-            </Property>
-          </Properties>
+        <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
           <SubComponents>
             <Component class="com.ghartur.locacarui.cadastros.CadastroCarros" name="cadastroCarros1">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Carros">
-                    <Property name="tabTitle" type="java.lang.String" value="Carros"/>
+                  <JTabbedPaneConstraints tabName="CARROS">
+                    <Property name="tabTitle" type="java.lang.String" value="CARROS"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -88,26 +83,8 @@
             <Component class="com.ghartur.locacarui.cadastros.CadastroCategorias" name="cadastroCategorias1">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Categorias">
-                    <Property name="tabTitle" type="java.lang.String" value="Categorias"/>
-                  </JTabbedPaneConstraints>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="com.ghartur.locacarui.cadastros.CadastroEspecifica&#xe7;&#xf5;es" name="cadastroEspecifica&#xe7;&#xf5;es1">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Especifica&#xe7;&#xf5;es">
-                    <Property name="tabTitle" type="java.lang.String" value="Especifica&#xe7;&#xf5;es"/>
-                  </JTabbedPaneConstraints>
-                </Constraint>
-              </Constraints>
-            </Component>
-            <Component class="com.ghartur.locacarui.cadastros.CadastroMarcas" name="cadastroMarcas1">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Marcas">
-                    <Property name="tabTitle" type="java.lang.String" value="Marcas"/>
+                  <JTabbedPaneConstraints tabName="CATEGORIAS">
+                    <Property name="tabTitle" type="java.lang.String" value="CATEGORIAS"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -115,8 +92,26 @@
             <Component class="com.ghartur.locacarui.cadastros.CadastroClientes" name="cadastroClientes1">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Clientes">
-                    <Property name="tabTitle" type="java.lang.String" value="Clientes"/>
+                  <JTabbedPaneConstraints tabName="CLIENTES">
+                    <Property name="tabTitle" type="java.lang.String" value="CLIENTES"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="com.ghartur.locacarui.cadastros.CadastroEspecifica&#xe7;&#xf5;es" name="cadastroEspecifica&#xe7;&#xf5;es1">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="ESPECIFICA&#xc7;&#xd5;ES">
+                    <Property name="tabTitle" type="java.lang.String" value="ESPECIFICA&#xc7;&#xd5;ES"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="com.ghartur.locacarui.cadastros.CadastroMarcas" name="cadastroMarcas1">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="MARCAS">
+                    <Property name="tabTitle" type="java.lang.String" value="MARCAS"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
